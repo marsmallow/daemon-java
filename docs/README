@@ -1,0 +1,27 @@
+    Java Daemon Application
+
+This is a simple Java application that will run on Unix/Linux operating systems
+as a daemon using the Apache Commons Daemon. The purpose of this application is
+to serve as a template/example of how to set up a Java application as a daemon
+on Unix/linux systems and as an example of how to use jsvc.
+
+The java_daemon_init script can be copied to /etc/init.d/ and used in the normal
+{start|stop|restart} manner.
+
+Link: http://sourceforge.net/projects/java-daemon/
+Email: brian@pixie.co.ke
+
+INSTALLATION
+
+1. Copy the dist folder to the location where you want the daemon to reside and
+   give it a descriptive name.
+
+2. Copy the file java_daemon_init to the folder /etc/init.d/ and make it
+   executable. You can rename the file to the name of the application.
+
+3. Edit the file java_daemon_init and provide correct values. You can rename
+   the file to give it a descriptive name.
+
+4. Run the daemon by issuing the command /etc/init.d/java_daemon_init start
+
+5. Stop by issuing the command /etc/init.d/java_daemon_init stop
